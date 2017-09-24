@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en"
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+    
+    <h:head>
+    <h:title align= 'center'>User-registration</h:title>
+    <br/><br/>
+    
+
+    </h:head>
+    
+    <h:body>
+    <h:form>
+    
+    
+         <h:outputText value="Firstname"></h:outputText>
+         <br/>
+		<h:inputText value="#{userlogin.firstname}"></h:inputText>
+		<br/>
+		<br/>
+		
+     
+		<h:outputText value="Lastname"></h:outputText>
+		<br/>
+		<h:inputText value="#{userlogin.lastname}"></h:inputText>
+		<br/>
+		<br/>
+		
+		
+		<h:outputText value="Address"></h:outputText>
+		<br/>
+		<h:inputText value="#{userlogin.address}"></h:inputText>
+		<br/>
+		<br/>
+		
+		<h:outputText value="Phonenumber"></h:outputText>
+		<br/>
+		<h:inputText value="#{userlogin.phonenumber}"></h:inputText>
+		<br/>
+		<br/>
+		
+		
+		<h:outputText value="Personalemail"></h:outputText>
+		<br/>
+		<h:inputText value="#{userlogin.personalemail}"></h:inputText>
+		<br/>
+		<br/>
+		
+		
+		<h:outputText value="username"></h:outputText>
+		<br/>
+		<h:inputText value="#{userlogin.username}"></h:inputText>
+		<br/>
+		<br/>
+		
+		
+		<h:outputText value="password"></h:outputText>
+		<br/>
+		<h:inputSecret id="submit"  value="#{userlogin.password}"></h:inputSecret>
+		<br/>
+		<br/>
+		<h:commandButton value="Register" id="Submit" action="#{userlogin.reg}" class="btn btn-dark"></h:commandButton>
+		
+		
+		</h:form>
+    </h:body>
+    </html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en"
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+         <h:head>
+     
+    <h:title align= 'center'>User Login</h:title>
+    <br/><br/>
+  
+    </h:head>
+    <h:body>
+    <h:form>
+
+		<h:outputText value="username"></h:outputText>
+		<h:inputText value="#{userlogin.username}" ></h:inputText>
+		<br/>
+		<br/>
+		
+		<h:outputText value="password"></h:outputText>
+		<h:inputSecret id="submit"  value="#{userlogin.password}"></h:inputSecret>
+	
+		<br/>
+		<br/>
+		
+		<h:outputText value=" "> </h:outputText>
+		
+		<h:commandButton value="Submit" id="Submit" action="#{userlogin.vali}" class="btn btn-dark"></h:commandButton>
+		<br/>
+		<br/>
+		
+		<h:commandButton value="Register" action="userregistration" class="btn btn-dark"></h:commandButton>
+		
+		</h:form>
+    </h:body>
+    </html>
+    
+    
